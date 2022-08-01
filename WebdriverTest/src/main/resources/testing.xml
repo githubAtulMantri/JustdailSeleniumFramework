@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+
+  <test name="TestingForJustdailApplication">
+    <classes>
+      <class name="com.justdail.testcases.HomePageTest"/>
+      <class name="com.justdail.testcases.FlightBookingPageTestTest"/>
+      <class name="com.justdail.testcases.SelectFlightPageTest"/>
+      <class name="com.justdail.testcases.SignUpPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
