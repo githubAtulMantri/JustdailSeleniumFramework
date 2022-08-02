@@ -16,6 +16,7 @@ public class HomePage extends TestBase {
 	}
 	
 	public void clickOnAirTicketslink() {
+		initialization();
 		airTicketsLink.isDisplayed();
 		airTicketsLink.click();		
 	}

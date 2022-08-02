@@ -10,15 +10,10 @@ import com.justdail.pages.SelectFlightPage;
 
 public class FlightBookingPageTest extends TestBase {
 	
-	SelectFlightPage selectFlightPage;
-	HomePage homePage;
 	FlightBookingPage flightBookingPage;
 	
 	@BeforeMethod
 	public void Setup() {
-		initialization();
-		selectFlightPage = new SelectFlightPage();
-		homePage = new HomePage();
 		flightBookingPage = new FlightBookingPage();
 		}
 	

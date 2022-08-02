@@ -35,6 +35,9 @@ public class FlightBookingPage extends TestBase {
 	@FindBy(xpath="//input[@type='submit']")
 	WebElement search;
 	
+	@FindAll(@FindBy(xpath="//div[contains(@class,'flgtacldr posRel')]"))
+	List <WebElement> FlightCalendars;
+	
 	public FlightBookingPage() {
 		PageFactory.initElements(driver,this);
 	}
@@ -53,9 +56,11 @@ public class FlightBookingPage extends TestBase {
 		going.sendKeys(Going);
 		goingSuggestion.click();
 		
+		FlightCalendars.get(0).click();
 		//Here index value 2 means, It will skip 2 date then click on next date
 		deptDates.get(2).click();
 		
+		FlightCalendars.get(1).click();
 		//Here index value 2 means next date of return
 		returnDates.get(1).click();
 		search.click();	

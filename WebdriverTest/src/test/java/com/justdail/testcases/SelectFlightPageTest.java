@@ -12,7 +12,6 @@ public class SelectFlightPageTest extends TestBase{
 	@BeforeMethod
 	public void SetUp() 
 	{
-		initialization();
 		selectFlightPage = new SelectFlightPage();
 	}
 	
